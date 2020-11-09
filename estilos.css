@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*--------------------------------------------------estilos generales---------------------------------------------------*/
+
+*{
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.section__titulo{
+    text-align: center;
+    font-size: 30px;
+    color: #049BD3;
+}
+
+.contenedor {
+    margin: auto;
+    width: 90%;
+
+}
+
+/*--------------------------------------------------estilos del header---------------------------------------------------*/
+
+.header {
+    height: 60px;
+}
+
+.header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(44,171,220,0.7);
+    width: 100%;
+    height: 88%;
+}
+
+.logo2, .icon-menu{
+    margin: 5px;
+    color: #fff;
+}
+
+.logo2 {
+    margin: 5px;
+    font-size: 35px;
+}
+
+.icon-menu {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #21618C;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/*------------------------------------------------------Estlos del menu--------------------------------------------------*/
+
+.nav {
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.7s;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__link {
+    display: block; 
+    padding: 15px;
+    background: #049BD3;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu__link:hover {
+    background: #21618C;
+    color: #fff;
+}
+
+.mostrar {
+    left: 0;
+}
+
+.select {
+    background: #fff;
+    color: #049BD3;
+}
+
+/*------------------------------------------------------Estlos del banner--------------------------------------------------*/
+
+.banner {
+    margin-top: -60px; 
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 30px;
+}
+
+.banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.banner__titulo {
+    text-shadow: black 3px 2px;
+}
+
+.banner__txt {
+    display: none;
+    text-shadow: black 3px 3px;
+}
+
+
+/*------------------------------------------------------Estlos del info--------------------------------------------------*/
+
+.info__columna{
+    
+    box-shadow: 5px 5px 15px black;
+    color: #fff;
+    padding: 15px;
+    margin: 20px;
+    height: 30%;
+    
+}
+
+.info__img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cont{
+    background: #4FD5CA;
+    height: 60%;
+    width: 90%;
+    margin: 50px;
+    text-align: center;
+    box-shadow: 5px 5px 15px black;
+}
+
+.info__titulo, .info__txt {
+    color: #fff;
+}
+
+/*------------------------------------------------------Estlos de cursos--------------------------------------------------*/
+
+.cursos__columna{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.cursos__descripcion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: rgba(0,0,0,0.6);
+    width: 60%;
+    height: 100%;
+    padding: 5px;
+}
+
+.cursos__titulo1 {
+    font-size: 35px;
+    margin: 5px 0;
+}
+
+.cursos__img {
+    width: 100%;
+    height: 100%;
+}
+
+/*------------------------------------------------------Estlos del footer--------------------------------------------------*/
+
+.footer{
+    background: #049BD3;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer .social [class^="icon-"] {
+    display: inline-block;
+    color: #05B2F4;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 4px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+}
+
+
+/*------------------------------------------------------Estlos responsive--------------------------------------------------*/
+
+@media(min-width:480px) {
+    .logo {
+        font-size: 40px;
+    }
+    
+    .banner__titulo {
+        font-size: 20px;
+    }
+    
+    .banner__txt {
+        display: block;
+        font-size: 16px;
+        margin: 7px 0;   
+    }
+    
+    .banner__img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .info, .cursos {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -80px;
+    }
+    
+    .info__columna {
+        width: 32%;
+    }
+    
+    .info__titulo {
+        font-size: 20px;
+        margin: 5px 0;
+    }
+    
+    .info__txt {
+        font-size: 25px;
+    }
+    
+    .cursos {
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    
+    .cursos__titulo {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+    
+    .cursos__txt {
+        font-size: 9px;
+    }
+    
+    .section__titulo {
+        width: 100%;
+    }
+    
+    .cursos__columna {
+        width: 48%;
+    }
+    
+}
+
+    
+@media(min-width:568px){
+    
+    .banner__titulo {
+        font-size: 40px;
+    }
+    
+    .cursos_titulo {
+        font-size: 40px;
+    }
+}   
+
+@media(min-width:870px){
+    
+    .contenedor {
+        width: 1000px;
+    }
+    
+    .section__titulo {
+        font-size: 50px;
+        margin: 30px 0;
+    }
+    
+    .nav {
+        position: static;
+        width: auto;
+    }
+    
+    .menu {
+        display: flex;
+    }
+    
+    .icon-menu {
+        display: none;
+    }
+    
+    .menu__link {
+        background: none;
+        font-size: 15PX;
+    }
+    
+    .select {
+        background: #049BD3;
+        color: white;
+    }
+    
+    .banner__titulo {
+        font-size: 40px;
+    }
+    
+    .banner__txt {
+        font-size: 25px;
+    }
+    
+    .info__titulo {
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .cursos__descripcion {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .cursos_titulo {
+        font-size: 40px;
+        margin: 0;
+    }
+    
+    .cursos__txt {
+        font-size: 15px;
+    }
+} 
+    
+@media(min-width:1150px){
+    
+    .contnedor {
+        width: 1000px;
+    }
+    
+    .section__titulo {
+        font-size: 50px;
+        margin: 30px 0;
+    }
+    
+    .nav {
+        position: static;
+        width: auto;
+    }
+    
+    .menu {
+        display: flex;
+    }
+    
+    .icon-menu {
+        display: none;
+    }
+    
+    .menu__link {
+        background: none;
+        font-size: 15PX;
+    }
+    
+    .select {
+        background: #049BD3;
+        color: white;
+    }
+    
+    .banner__titulo {
+        font-size: 80px;
+    }
+    
+    .banner__titulo {
+        font-size: 50px;
+    }
+    
+    .info__columna {
+        padding: 30px;
+        
+    }
+    
+    .info__titulo {
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .cursos__descripcion {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .cursos_titulo {
+        font-size: 50px;
+        margin: 0;
+    }
+    
+    .cursos__txt {
+        font-size: 18px;
+    }
+}  
+    
+@media(min-width:1280px){ 
+
+    .contenedor {
+        width: 1200px;
+    }
+    
+    .banner .contenedor {
+        top: 40%;
+    }
+    
+    .info {
+        margin-top: -200px;
+    }
+    
+    .logo {
+        font-size: 60px;
+    }
+    
+}  
