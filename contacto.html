@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>LICORERIA D y A</title>
+        <meta charset1!="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <link rel="stylesheet" href="style.css"/>
+      <link rel="stylesheet" href="fontello.css"/>
+        <link rel="stylesheet" href="CSS/estilos.css">
+        <link rel="stylesheet" href="CSS/fontello.css">
+    </head>
+    <body>
+       
+<!--------------------------------------------------------------HEADER------------------------------------------------------------------>
+       
+        <header class="header">
+            <div class="contenedor">
+                <h1 class="logo2">LICORERIA DyA</h1>
+                <span class="icon-menu" id="btn-menu"></span>
+                <nav class="nav" id="nav">
+                    <ul class="menu">
+                        <li class="menu__item"><a class="menu__link select" href="index.html">Inicio</a></li>
+                        <li class="menu__item"><a class="menu__link" href="contacto.html">Contacto</a></li>
+                        <li class="menu__item"><a class="menu__link" href="iniciar_sesion.html">Iniciar sesión</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+<!--------------------------------------------------------------BANNER------------------------------------------------------------------>
+        
+        <div class="banner">
+            <img src="https://lh3.googleusercontent.com/proxy/Wd2u2DHyPzvM_DcJD7BdUeldW4UhO5fBZJrd-sb9tt0cLxs7e5VjBJFWgbqXcxynQetpP4C2np0QahaiMDc1ehgmxe_6b3FkbFmImU69WKqTBxPF8w" alt="" class="banner__img">
+            <div class="contenedor">
+                <h2 class="banner__titulo">La mejor licorería a tu alcance</h2>
+                <p class="banner__txt">Disfruta de nuestros servicios</p>
+            </div>
+        </div>
+        
+<!--------------------------------------------------------------MAIN------------------------------------------------------------------>
+        
+      <main class="main">
+            <section class="group contact">
+                <h2 class="group_titulo">Contáctenos</h2>
+                <div class="contenedor contenedor--flex">
+                    <div class="contacto-informacion columna colum-50">
+                        <h3 class="columna_titulo">Información de contacto</h3>
+                        <p class="columnatxt">Lorem ipsum dolor sit amet, consectetur <br>Voluptatem, facilis vitae dolorum quas quam qui!</p>
+                        <p class="columnatxt"><span class="icon-telefono"></span>Teléfono: 999-999-999</p>
+                        <p class="columnatxt"><span class="icon-telefono"></span>Teléfono: 999-999-999</p>
+                        <p class="columnatxt"><span class="icon-localizacion"></span>Colombia, Bogotá D.C.</p>
+                        <p class="columnatxt"><span class="icon-mail"></span>escuelabayernmunich@gmail.com</p>
+                        <div class="social-icon">
+                            <a href="" class="social-icon__menu"><span class="icon-facebook"></span></a>
+                            <a href="" class="social-icon__menu"><span class="icon-instagram"></span></a>
+                            <a href="" class="social-icon__menu"><span class="icon-twitter"></span></a>
+                        </div>
+                    </div>
+                    
+
+<!------------------------------------------------------CONEXIÓN PHP Y TEXTBOX------------------------------------------------------------------>
+                   
+                    <form action="contacto_enviar.php" method="post" class="formulario columna colum-50">
+                        <label for="" class="formulario_label">Nombre:</label>
+                        <input type="text" class="formulario_input-txt" name="nombre"  placeholder="Ingrese su nombre" required>
+                        
+                        <label for="" class="formulario_label">Correo:</label>
+                        <input type="text" class="formulario_input-txt" name="correo" placeholder="Ingrese su correo electronico" required>
+                        
+                        <label for="" class="formulario_label">Teléfono:</label>
+                        <input type="text" class="formulario_input-txt" name="telefono" placeholder="Ingrese su telefono" required>
+                        
+                        <label for="" class="formulario_label">Mensaje:</label>
+                        <textarea name="mensaje" id="" cols="30" rows="10" class="formulario_textarea" placeholder="Opiniones, recomendaciones, comentarios o solicitud. Nota: se recomienda que solo se escriba su comunicado acerca la página. Gracias.
+                        " required></textarea>
+                        
+                        <input type="submit" class="formulario_btn btn" value="Enviar">
+                    </form>
+                </div>
+            </section>
+        </main>
+        
+        
+<!--------------------------------------------------------------FOOTER------------------------------------------------------------------>
+        
+        <footer class="footer">
+            <div class="social">
+                <a href="" class="icon-facebook"></a>
+                <a href="" class="icon-instagram"></a>
+                <a href="" class="icon-twitter"></a>
+            </div>
+            <p class="copy">&copy; S.I.E.F Nobel 2020 - Todos los derechos reservados</p>
+        </footer>
+        <script src="JS/menu.js"></script>
+    </body>
+</html>
