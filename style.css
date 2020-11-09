@@ -452,3 +452,122 @@ h1, h2, h3, h4, h5, h6 {
     }
     
 }  
+
+/*------------------------------------------------------ESTILOS DE CONTACTOS-----------------------------------------------*/
+.group_titulo {
+    
+    font-size: 50px;
+    text-align: center;   
+}
+
+.contacto-informacion{
+    padding: 10px;
+    padding-top: 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #049BD3;
+}
+
+.contacto-informacion [class*="icon-"]{
+    font-size: 1.3em;
+    margin-right: 7px;
+    position: relative;
+    top: 5px;
+    color: #049BD3;
+    border-radius: 5px;
+}
+.contacto-informacion .social-icon{
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.contacto-informacion .social-icon [class*="icon-"]{
+    background: #049BD3;
+    color: white;
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.formulario{
+    padding: 10px;;
+    padding-top: 0;
+}
+
+.formulario_label, .formulario_input-txt, .formulario_textarea{
+    display: block;
+    width: 100%;
+}
+.formulario_input-txt{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.formulario_textarea{
+    min-height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 200px;
+}
+.formulario_btn{
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3em;
+    background: #049BD3;
+    color: #fff;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+
+}
+
+/*------------------------------------------------------ESTILOS DEL MAPA-----------------------------------------------*/
+
+
+
+/*------------------------------------------------------ESTILOS RESPONSIVE-----------------------------------------------*/
+
+@media screen and (min-width:480px){
+    .contacto .contenedor--flex{
+    align-items: flex-start;
+    }
+    .contacto-informacion p{
+        font-size: .9em;
+    }
+    .contacto-informacion{
+        border-bottom: none;
+    }
+    
+    .formulario_btn{
+    font-size: 1em;
+    height: 35px;
+    width: 55px;
+    border-radius: 5px;
+    }
+    
+    .group_titulo {
+    
+    font-size: 30px;
+    text-align: center;   
+    }
+}
+@media screen and (min-width:768px){
+    .contacto-informacion p{
+        font-size: 1.1em;
+    }
+    .contacto-informacion .columna_titulo{
+    font-size: 1.5em;
+    }
+    
+    .group_titulo {
+    
+    font-size: 40px;
+    text-align: center;   
+}
+}
+@media screen and (min-width:1024px){
+    .contacto-informacion p{
+        font-size: 1.2em;
+    }
+    .contacto-informacion .columna_titulo{
+    font-size: 2em;
+    }
+}
